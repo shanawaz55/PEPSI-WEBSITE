@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>PEPSI WEBSITE</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <section class="sec">
+  	<header>
+  		<a href="#"><img src="logo.png"></a>
+  		<ul>
+  			<li><a href="#">Home</a></li>
+  			<li><a href="#">Products</a></li>
+  			<li><a href="#">What's New</a></li>
+  			<li><a href="#">Newsletter</a></li>
+  			<li><a href="#">Contact</a></li>
+  		</ul>
+  	</header>
+  	<div class="content">
+  		<div class="textbox">
+  			<h2>That's What<br><span> I like</span></h2>
+  			<p>The soft drink Pepsi was developed by Caleb Bradham, a pharmacist and businessman from Duplin County, North Carolina. He coined the name "Pepsi-Cola" in 1898 while marketing the drink from his pharmacy in New Bern, North Carolina. As his drink gained popularity, Bradham founded the Pepsi-Cola Company in 1902 and registered a patent for his recipe in 1903.[3] The company was incorporated in Delaware in 1919. Bradham's company experienced years of success leading up to World War I. However, sugar rationing during the war and a volatile sugar market in the war's aftermath damaged the company's financial health to such a degree that in 1923, Bradham declared bankruptcy and returned to running pharmacies in North Carolina.</p>
+  			<a href="#">View All Products</a>
+  	 </div>
+  	 <div class="imgbox">
+  	 	<img src="pepsi001.png" class="pepsi">
+  	 </div>
+  	</div>
+    <ul class="thumb">
+      <li><img src="pepsi001"  onclick="imgSlider('pepsi001.png');changeBgcolor('#0062be')"></li>
+      <li><img src="pepsi002" onclick="imgSlider('pepsi002.png');changeBgcolor('#060c2c')"></li>
+      <li><img src="pepsi003" onclick="imgSlider('pepsi003.png');changeBgcolor('#1e1e1e')"></li>
+    </ul>
+    <ul class="sci">
+      <li><a href="#"><img src="facebook.png"></a></li>
+      <li><a href="#"><img src="twitter.png"></a></li>
+      <li><a href="#"><img src="instagram.png"></a></li>
+    </ul>
+  </section>
+  <script type="text/javascript">
+    function imgslider(anything){
+      document.queryselector('.pepsi').src = anything;
+    }
+    function changeBgcolor(color){
+      const sec = doctument.queryselector('.sec');
+      sec.style.background = color;
+    }
+  </script>
+</body>
+</html>
